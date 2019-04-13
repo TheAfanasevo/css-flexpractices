@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Flexbox Navigation Bar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+  
+  <div class="wrapper">
+
+    <header class="top">
+      <h1><a href="#">What the Flexbox?!</a></h1>
+    </header>
+      
+    <nav class="flex-nav">
+      <a href="#" class="toggleNav">☰ Menu</a>
+      
+      <ul>
+        <li href="#"><a>Item 01</a></li>
+        <li href="#"><a>Item 02</a></li>
+        <li href="#"><a>Item 03</a></li>
+        <li href="#"><a>Item 04</a></li>
+        <li href="#"><a>Item 05</a></li>
+        <li href="#"><a>Item 06</a></li>
+        <li class="social">
+          <a href="http://twitter.com/kursunmust" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="social">
+          <a href="https://www.quora.com/profile/Mustafa-Kursun" target="_blank"><i class="fab fa-quora"></i></a>
+        </li>
+        <li class="social">
+          <a href="https://github.com/TheAfanasevo" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <section class="hero">
+      <img src="http://source.unsplash.com/1000x600/?abstract">
+    </section>
+
+    <section class="details">
+      <p>We are all here to hear about FlexBox!</p>
+      <p>This web page is not useless! Respect it!</p>
+    </section>
+
+    <section class="signup">
+      <form action="" class="signup">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <input type="submit" value="Sign me up!">
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; Mustafa Kursun</p>
+    </footer>
+
+  </div>
+
+<script>
+  const toggleNav = document.querySelector('.toggleNav');
+  const ul = document.querySelector('.flex-nav ul');
+
+  toggleNav.addEventListener('click', function() {
+    ul.classList.toggle('open');
+  });
+
+</script>
+</body>
+</html>
